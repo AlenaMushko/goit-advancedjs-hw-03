@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <form class="search-form" id="search-form">
+        <form class="form" id="search-form">
           <input
             type="text"
             name="searchQuery"
@@ -33,11 +33,9 @@
 
     <main class="main">
       <div class="container">
-        <div class="loader is-hidden" id="loader">
-          <div class="loader"></div>
-        </div>
+        <div class="loader is-hidden" id="loader"></div>
 
-        <div class="gallery" id="gallery"></div>
+        <ul class="gallery" id="gallery"></ul>
 
         <div class="load-more-container is-hidden" id="load-more-container">
           <button class="load-more-button" id="load-more-button" type="button">

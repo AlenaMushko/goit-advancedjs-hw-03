@@ -11,9 +11,9 @@ import {
   hideLoader,
 } from './js/render-functions.js';
 
-const searchForm = document.querySelector('#search-form');
-const gallery = document.querySelector('#gallery');
-const loader = document.querySelector('#loader');
+const searchForm = document.querySelector('.form');
+const gallery = document.querySelector('.gallery');
+const loader = document.querySelector('.loader');
 const loadMoreContainer = document.querySelector('#load-more-container');
 const loadMoreButton = document.querySelector('#load-more-button');
 
