@@ -9,7 +9,7 @@ import {
   clearGallery,
   showLoader,
   hideLoader,
-} from './js/render-function.js';
+} from './js/render-functions.js';
 
 const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('#gallery');
