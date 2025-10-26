@@ -72,21 +72,29 @@
 
 /* Loader */
 .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.spinner {
   position: relative;
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
 
-.loader:before,
-.loader:after {
+.spinner:before,
+.spinner:after {
   content: '';
   border-radius: 50%;
   position: absolute;
   inset: 0;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
 }
-.loader:after {
+
+.spinner:after {
   box-shadow: 0 2px 0 #4e75ff inset;
   animation: rotate 2s linear infinite;
 }
