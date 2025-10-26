@@ -86,7 +86,7 @@
 }
 
 .loader:before,
-.loaderr:after {
+.loader:after {
   content: '';
   border-radius: 50%;
   position: absolute;
