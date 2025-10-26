@@ -9,6 +9,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    envPrefix: 'VITE_',
     root: 'src',
     build: {
       sourcemap: true,
