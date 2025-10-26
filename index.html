@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw-11</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script type="module" crossorigin src="/goit-advancedjs-hw-02/index.js"></script>
+    <title>Image Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/goit-advancedjs-hw-03/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-GN5hr8qZ.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-UIoI8Wr1.css">
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">
-        <svg class="icon">
-          <use href="./img/symbol-defs.svg#icon-search"></use>
-        </svg>
-      </button>
-    </form>
+    <header class="header">
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+    </header>
 
-    <div class="load-gallery">
-      <div class="gallery"></div>
-      <button type="button" class="load-more is-hidden">Load more</button>
-      <p class="info-text is-hidden">
-        We're sorry, but you've reached the end of search results.
-      </p>
-    </div>
+    <main class="main">
+      <div class="container">
+        <div class="loader is-hidden" id="loader">
+          <div class="loader"></div>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+
+        <div class="load-more-container is-hidden" id="load-more-container">
+          <button class="load-more-button" id="load-more-button" type="button">
+            Load more
+          </button>
+        </div>
+      </div>
+    </main>
+
   </body>
 </html>
